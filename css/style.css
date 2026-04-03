@@ -91,3 +91,22 @@ header {
         margin: 20px;
     }
 }
+
+.recursos {
+    h2 {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    .blocos {
+        text-align: center;
+        border : 1px solid #6A0DAD;
+        border-radius: 5px;
+        margin: 50px 75px;
+        padding: 15px;
+    }
+}
