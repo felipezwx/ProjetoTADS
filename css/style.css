@@ -17,7 +17,7 @@ header {
             list-style: none;
             li {
                 display: inline-block;
-                margin: 15px;
+                margin: 25px;
                 a {
                     text-decoration: none;
                     color: #FFF;
@@ -29,4 +29,17 @@ header {
             }
         }
     }
+}
+
+.logo {
+    width: 120px;
+}
+
+.btnheader {
+    background: #5C36C5;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: all 0.5s;
 }
