@@ -79,3 +79,15 @@ header {
     background: #5BD0E8;
     color: #000;
 }
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    p {
+        max-width: 1000px;
+        margin: 20px;
+    }
+}
