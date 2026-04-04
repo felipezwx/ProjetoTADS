@@ -12,24 +12,33 @@ header {
     display: inline-block;
     position: fixed;
     top: 0;
-    nav {
-        float: right;
-        ul {
-            list-style: none;
-            li {
-                display: inline-block;
-                margin: 25px;
-                a {
-                    text-decoration: none;
-                    color: #FFF;
-                    transition: all 0.5s;
-                }
-                a:hover {
-                    color: #440B6B;
-                }
-            }
-        }
-    }
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all 0.5s;
+}
+
+header nav ul li a:hover {
+    color: #440B6B;
+}
+
+.fundo {
+    background: linear-gradient(180deg, #0b0b0f, #1e3a8a);
 }
 
 .logo {
@@ -60,21 +69,31 @@ header {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 110px;
-    text-align: right;
-    padding-right: 80px;
+    margin-top: 100px;
+    text-align: center;
+    padding-right: 100px;
     align-items: flex-end;
     box-sizing: border-box;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: darken;
 }
 
 .partePrincipal h1 {
     font-size: 44px;
     margin-bottom: 20px;
+    color: #FFF;
 }
 
 .partePrincipal p {
     max-width: 800px;
     margin-bottom: 20px;
+    color: #FFF;
+}
+
+.conteudo {
+    max-width: 400px;
+    text-align: center;
+    color: #FFF;
 }
 
 .btn {
@@ -95,38 +114,39 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
     align-items: center;
-    p {
-        max-width: 1000px;
-        margin: 20px;
-    }
 }
 
-.recursos {
-    h2 {
-        margin-top: 50px;
-        text-align: center;
-    }
+.sobre p {
+    max-width: 1000px;
+    margin: 20px;
+}
+
+.recursos h2 {
+    padding-top: 50px;
+    text-align: center;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    .blocos {
-        text-align: center;
-        border : 1px solid #6A0DAD;
-        border-radius: 5px;
-        margin: 50px 75px;
-        padding: 15px;
-    }
+}
+
+.grid .blocos {
+    text-align: center;
+    border : 1px solid #6A0DAD;
+    border-radius: 5px;
+    margin: 50px 75px;
+    padding: 15px;
 }
 
 .demojogo {
     text-align: center;
-    p {
-        margin-top: 20px;
-    }
+}
+
+.demojogo p {
+    margin-top: 20px;
 }
 
 footer {
