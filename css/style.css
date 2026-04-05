@@ -2,11 +2,12 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 header {
     width: 100%;
-    background-color: #000;
+    background-color: #111827;
     padding: 10px;
     box-sizing: border-box;
     display: inline-block;
@@ -47,17 +48,20 @@ header nav ul li a:hover {
 }
 
 .btnheader {
-    background: #5C36C5;
+    background: linear-gradient(135deg, #6d28d9, #9333ea);
+    color: #FFF;
     text-decoration: none;
     padding: 10px 30px;
     font-size: 16px;
     border-radius: 15px;
     transition: all 0.5s;
+    border: none;
 }
 
 .btnheader:hover {
-    background: #5BD0E8;
+    background: linear-gradient(135deg, #7c3aed, #c4b5fd);
     color: #000;
+    border: none;
 }
 
 .partePrincipal {
@@ -71,7 +75,7 @@ header nav ul li a:hover {
     flex-direction: column;
     margin-top: 100px;
     text-align: center;
-    padding-right: 100px;
+    padding-right: 200px;
     align-items: flex-end;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0, 0.5);
@@ -96,18 +100,25 @@ header nav ul li a:hover {
     color: #FFF;
 }
 
+.conteudo h1 {
+    word-spacing: 10px;
+}
+
 .btn {
-    background: #5C36C5;
+    background: linear-gradient(135deg, #6d28d9, #9333ea);
+    color: #FFF;
     text-decoration: none;
     padding: 30px 90px;
     font-size: 30px;
     border-radius: 25px;
+    border: none;
     transition: all 0.5s;
 }
 
 .btn:hover {
-    background: #5BD0E8;
+    background: linear-gradient(135deg, #7c3aed, #c4b5fd);
     color: #000;
+    border: none;
 }
 
 .sobre {
@@ -116,6 +127,7 @@ header nav ul li a:hover {
     text-align: center;
     padding-top: 50px;
     align-items: center;
+    color: #FFF;
 }
 
 .sobre p {
@@ -126,33 +138,56 @@ header nav ul li a:hover {
 .recursos h2 {
     padding-top: 50px;
     text-align: center;
+    color: #FFF;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 25%);
+    color: #FFF;
 }
 
-.grid .blocos {
+.blocos {
     text-align: center;
-    border : 1px solid #6A0DAD;
-    border-radius: 5px;
+    background: #111827;
+    border : 1px solid rgba(109, 40, 217, 0.5);
+    box-shadow: 0 0 15px rgba(109, 40, 217, 0.3);
+    border-radius: 12px;
     margin: 50px 75px;
-    padding: 15px;
+    padding: 30px;
+}
+
+.blocos:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(109, 40, 217, 0.6);
+    cursor: pointer;
 }
 
 .demojogo {
     text-align: center;
+    color: #FFF;
 }
 
 .demojogo p {
     margin-top: 20px;
 }
 
+iframe {
+      margin: 30px 0;
+      width: 70%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(109, 40, 217, 0.5);
+}
+
+.contato {
+    padding: 200px;
+}
+
 footer {
     text-align: center;
-    margin-top: 50px;
     color: #FFF;
-    background-color: #000;
+    background-color: #111827;
     padding: 50px;
 }

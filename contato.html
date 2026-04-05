@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Galaxy</title>
+
+    <link rel="icon" href="imgs/CrystalGalaxy.png">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <header>
+
+        <a href="index.html" title="Home" alt="Home">
+            <img src="imgs/CrystalGalaxy.png" alt="Nome do Jogo" class="logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Serviços</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+                <li>
+                    <button class="btnheader">Jogar</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fundo">
+            <section class="contato">
+                <h2>Contato</h2>
+                <p>Entre em contato sobre duvidas</p>
+
+                <form class="form-contato" method="post">
+                    <label for="nome">Digite seu nome:</label>
+                    <input type="text" name="nome" id="nome" size="50" maxlength="40" placeholder="Nome Completo" autocomplete="off" required class="formulario">
+                    <br>
+
+                    <label for="email">Digite seu e-mail:</label>
+                    <input type="email" name="email" id="email" maxlength="50" placeholder="Digite um e-mail Válido" autocomplete="off" required class="formulario" inputmode="email">
+                    <br>
+
+                    <label for="dataNascimento">Data Nascimento:</label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" class="formulario" autocomplete="off">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site Desenvolvido por Felipe</p>
+    </footer>
+</body>
+</html>
