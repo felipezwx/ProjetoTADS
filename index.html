@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="#sobre">Sobre</a>
@@ -34,11 +34,14 @@
                 <li>
                     <button class="btnheader">Jogar</button>
                 </li>
+                <li>
+                    <button onclick="alternarTema()" id="btnTema" class="btnTema">☀️</button>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="conteudoSensivel" style="filter: blur(5px);">
         
         <section class="partePrincipal">
             <div class="conteudo">
@@ -79,5 +82,7 @@
     <footer>
         <p>Site Desenvolvido por Felipe</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

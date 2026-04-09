@@ -13,6 +13,7 @@ header {
     display: inline-block;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 header nav {
@@ -38,8 +39,24 @@ header nav ul li a:hover {
     color: #440B6B;
 }
 
+.light header {
+    background-color: #FFF;
+}
+
+.light header nav ul li a {
+    color: #000;
+}
+
+.light header nav ul li a:hover {
+    color: #440B6B;
+}
+
 .fundo {
     background: linear-gradient(180deg, #0b0b0f, #1e3a8a);
+}
+
+.light .fundo {
+    background: #c7d2fe;
 }
 
 .logo {
@@ -64,9 +81,26 @@ header nav ul li a:hover {
     border: none;
 }
 
+.btnTema {
+    background: linear-gradient(135deg, #6d28d9, #9333ea);
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 100px;
+    transition: all 0.5s;
+    border: none;
+}
+
+.btnTema:hover {
+    background: linear-gradient(135deg, #7c3aed, #c4b5fd);
+    color: #000;
+    border: none;
+}
+
 .partePrincipal {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: url("../imgs/FundoPrincipal.png") no-repeat;
     background-size: cover;
     background-position: left center;
@@ -125,7 +159,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 150px;
     align-items: center;
     color: #FFF;
 }
@@ -133,18 +167,28 @@ header nav ul li a:hover {
 .sobre p {
     max-width: 1000px;
     margin: 20px;
+    padding-top: 60px;
+}
+
+.light .sobre {
+    color: #000;
 }
 
 .recursos h2 {
-    padding-top: 50px;
+    padding-top: 150px;
     text-align: center;
     color: #FFF;
+}
+
+.light .recursos h2 {
+    color: #000;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     color: #FFF;
+    padding-top: 60px;
 }
 
 .blocos {
@@ -157,6 +201,13 @@ header nav ul li a:hover {
     padding: 30px;
 }
 
+.light .blocos {
+    background: #FFF;
+    color: #000;
+    border: 1px solid rgba(109, 40, 217, 0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .blocos:hover {
     transform: scale(1.08);
     box-shadow: 0 0 25px rgba(109, 40, 217, 0.6);
@@ -166,10 +217,16 @@ header nav ul li a:hover {
 .demojogo {
     text-align: center;
     color: #FFF;
+    padding-top: 150px;
+}
+
+.light .demojogo {
+    color: #000;
 }
 
 .demojogo p {
     margin-top: 20px;
+    padding: 30px 0;
 }
 
 iframe {
@@ -190,4 +247,9 @@ footer {
     color: #FFF;
     background-color: #111827;
     padding: 50px;
+}
+
+.light footer {
+    background-color: #e5e7eb;
+    color: #000;
 }
