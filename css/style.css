@@ -167,7 +167,7 @@ header nav ul li a:hover {
 .sobre p {
     max-width: 1000px;
     margin: 20px;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .light .sobre {
@@ -175,7 +175,7 @@ header nav ul li a:hover {
 }
 
 .recursos h2 {
-    padding-top: 150px;
+    padding-top: 130px;
     text-align: center;
     color: #FFF;
 }
@@ -212,6 +212,42 @@ header nav ul li a:hover {
     transform: scale(1.08);
     box-shadow: 0 0 25px rgba(109, 40, 217, 0.6);
     cursor: pointer;
+}
+
+.ComoJogar {
+    text-align: center;
+    padding: 40px;
+    color: #FFF;
+}
+
+.ComoJogar h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.Controles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.itens {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.itens:hover {
+    transform: scale(1.05);
+}
+
+.itens span {
+    font-size: 30px;
+}
+
+.itens p {
+    margin-top: 10px;
 }
 
 .demojogo {
