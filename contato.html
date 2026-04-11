@@ -7,6 +7,10 @@
 
     <link rel="icon" href="imgs/CrystalGalaxy.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -26,7 +30,7 @@
                     <a href="#sobre">Sobre</a>
                 </li>
                 <li>
-                    <a href="#">Serviços</a>
+                    <a href="historia.html">Historia</a>
                 </li>
                 <li>
                     <a href="contato.html">Contato</a>
@@ -41,31 +45,29 @@
         </nav>
     </header>
 
-    <main class="">
         <section class="contato">
             <h2>Fale Comigo</h2>
 
-            <from id="formContato">
+            <form id="formContato">
                 <label>Nome:</label>
-                <input type="text" id="nome" required>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="off" required>
 
                 <label>Email:</label>
-                <input type="email" id="email" required>
+                <input type="email" name="email" id="email" placeholder="Digite um e-mail Válido" autocomplete="off" required inputmode="email">
 
                 <label>Mensagem:</label>
-                <textarea id="mensagem" rows="5" required></textarea>
+                <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
 
                 <button type="submit">Enviar</button>
-            </from>
+            </form>
 
             <p id="reposta"></p>
         </section>
-    </main>
 
     <footer>
         <p>Site Desenvolvido por Felipe</p>
     </footer>
 
-
+    <script src="index.js"></script>
 </body>
 </html>

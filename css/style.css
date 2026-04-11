@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inter, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -140,8 +140,6 @@ header nav ul li a:hover {
 
 .btn {
     background: linear-gradient(135deg, #6d28d9, #9333ea);
-    color: #FFF;
-    text-decoration: none;
     padding: 30px 90px;
     font-size: 30px;
     border-radius: 25px;
@@ -149,10 +147,20 @@ header nav ul li a:hover {
     transition: all 0.5s;
 }
 
+.btn a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all 0.5s;
+}
+
 .btn:hover {
     background: linear-gradient(135deg, #7c3aed, #c4b5fd);
     color: #000;
     border: none;
+}
+
+.btn a:hover{
+    color: #000;
 }
 
 .sobre {
@@ -350,4 +358,15 @@ footer {
 .contato button:hover {
     background: linear-gradient(135deg, #7c3aed, #c4b5fd);
     color: black;
+}
+
+.historia {
+    max-width: 900px;
+    margin: 190px auto 140px auto;
+    padding: 40px;
+    background: #111827;
+    border-radius: 15px;
+    color: #FFF;
+    line-height: 1.6;
+    box-shadow: 0 0 20px rgba(109, 40, 217, 0.3);
 }
