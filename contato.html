@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
+<body class="fundo">
     <header>
 
         <a href="index.html" title="Home" alt="Home">
@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="#sobre">Sobre</a>
@@ -34,34 +34,38 @@
                 <li>
                     <button class="btnheader">Jogar</button>
                 </li>
+                <li>
+                    <button onclick="alternarTema()" id="btnTema" class="btnTema">☀️</button>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="fundo">
-            <section class="contato">
-                <h2>Contato</h2>
-                <p>Entre em contato sobre duvidas</p>
+    <main class="">
+        <section class="contato">
+            <h2>Fale Comigo</h2>
 
-                <form class="form-contato" method="post">
-                    <label for="nome">Digite seu nome:</label>
-                    <input type="text" name="nome" id="nome" size="50" maxlength="40" placeholder="Nome Completo" autocomplete="off" required class="formulario">
-                    <br>
+            <from id="formContato">
+                <label>Nome:</label>
+                <input type="text" id="nome" required>
 
-                    <label for="email">Digite seu e-mail:</label>
-                    <input type="email" name="email" id="email" maxlength="50" placeholder="Digite um e-mail Válido" autocomplete="off" required class="formulario" inputmode="email">
-                    <br>
+                <label>Email:</label>
+                <input type="email" id="email" required>
 
-                    <label for="dataNascimento">Data Nascimento:</label>
-                    <input type="date" name="dataNascimento" id="dataNascimento" class="formulario" autocomplete="off">
-                </form>
-            </section>
-        </div>
+                <label>Mensagem:</label>
+                <textarea id="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </from>
+
+            <p id="reposta"></p>
+        </section>
     </main>
 
     <footer>
         <p>Site Desenvolvido por Felipe</p>
     </footer>
+
+
 </body>
 </html>
