@@ -283,9 +283,8 @@ header nav ul li a:hover {
     color: #000;
 }
 
-.demojogo p {
-    margin-top: 20px;
-    padding: 30px 0;
+.demojogo h2 {
+    margin-bottom: 20px;
 }
 
 iframe {
@@ -313,13 +312,18 @@ footer {
     color: #000;
 }
 
+.margincontato {
+    padding-top: 119px;
+    padding-bottom: 119px;
+}
+
 .contato {
     width: 100%;
-    margin-top: 190px;
+    margin-top: 100px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 140px;
+    margin-bottom: 0px;
     background: #1e293b;
     padding: 30px;
     border-radius: 10px;
@@ -360,9 +364,13 @@ footer {
     color: black;
 }
 
+.marginhistoria {
+    padding-top: 100px;
+}
+
 .historia {
     max-width: 900px;
-    margin: 190px auto 140px auto;
+    margin: 100px auto 140px auto;
     padding: 40px;
     background: #111827;
     border-radius: 15px;

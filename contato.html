@@ -14,55 +14,59 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body class="fundo">
-    <header>
+<body>
+    <div class="fundo">
+        <header>
 
-        <a href="index.html" title="Home" alt="Home">
-            <img src="imgs/CrystalGalaxy.png" alt="Nome do Jogo" class="logo">
-        </a>
+            <a href="index.html" title="Home" alt="Home">
+                <img src="imgs/CrystalGalaxy.png" alt="Nome do Jogo" class="logo">
+            </a>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-                <li>
-                    <button class="btnheader">Jogar</button>
-                </li>
-                <li>
-                    <button onclick="alternarTema()" id="btnTema" class="btnTema">☀️</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="historia.html">Historia</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <button class="btnheader">Jogar</button>
+                    </li>
+                    <li>
+                        <button onclick="alternarTema()" id="btnTema" class="btnTema">☀️</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <section class="contato">
-            <h2>Fale Comigo</h2>
+        <main class="margincontato">
+            <section class="contato">
+                <h2>Fale Comigo</h2>
 
-            <form id="formContato">
-                <label>Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="off" required>
+                <form id="formContato">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="off" required>
 
-                <label>Email:</label>
-                <input type="email" name="email" id="email" placeholder="Digite um e-mail Válido" autocomplete="off" required inputmode="email">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite um e-mail Válido" autocomplete="off" required inputmode="email">
 
-                <label>Mensagem:</label>
-                <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                    <label>Mensagem:</label>
+                    <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
+                    <button type="submit">Enviar</button>
+                </form>
 
-            <p id="reposta"></p>
-        </section>
+                <p id="reposta"></p>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>Site Desenvolvido por Felipe</p>

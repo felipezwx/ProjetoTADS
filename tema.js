@@ -13,3 +13,13 @@ function alternarTema() {
         botao.innerText = "☀️";
     }
 }
+
+const form = document.getElementById("formContato");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("Sua mensagem foi enviada!");
+
+    form.reset();
+});
