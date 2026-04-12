@@ -370,3 +370,88 @@ footer {
     line-height: 1.6;
     box-shadow: 0 0 20px rgba(109, 40, 217, 0.3);
 }
+
+@media (max-width: 720px) {
+    header {
+        text-align: center;
+    }
+
+    header nav {
+        float: none;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .partePrincipal {
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        padding-right: 0;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .conteudo {
+        max-width: 100%;
+    }
+
+    .partePrincipal h1 {
+        font-size: 28px;
+    }
+
+    .partePrincipal {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .sobre {
+        padding: 100px 20px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blocos {
+        margin: 20px
+    }
+
+    .Controles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .itens {
+        margin: 10px;
+    }
+
+    iframe {
+        width: 95%;
+        height: 300px;
+    }
+
+    .contato {
+        padding: 20px;
+        margin: 350px 20px 100px 20px;
+        width: auto;
+    }
+
+    .historia {
+        margin: 350px 20px 100px 20px;
+        padding: 20px;
+    }
+}
